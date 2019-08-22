@@ -33,6 +33,7 @@ var orm = {
       cb(res);
     });
   },
+
   insertOne: function(table, cols, vals, cb) {
     var dbQuery =
       "INSERT INTO " +
@@ -53,8 +54,7 @@ var orm = {
     });
   },
   updateOne: function(table, objColVals, condition, cb) {
-    var dbQuery =
-      "UPDATE " +
+    var dbQuery = "UPDATE " +
       table +
       " SET " +
       translateSql(objColVals) +
