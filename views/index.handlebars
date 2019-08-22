@@ -19,7 +19,7 @@
                     </select>
 
                     <button type="submit" class="btn btn-success" id="addburger">
-                        <span class="fa fa-hamburger"></span>
+                        <i class="fas fa-hamburger"></i>
                     </button>
                 </div>
             </form>
@@ -39,7 +39,7 @@
 
                         <span><strong> {{this.id}} - {{this.burger_name}}</strong></span>
                         <button type="button" class="eatburger btn btn-warning" id="eatbutton" data-id="{{this.id}}"
-                            data-newDevoured="{{devoured}}"><span class="fa fa-hamburger"></span></button>
+                            data-newDevoured="{{devoured}}"><i class="fas fa-hamburger"></i></button>
                         <hr>
                         {{/unless}}
                         {{/each}}
@@ -59,7 +59,7 @@
                         {{#if devoured}}
                         <span><strong> {{this.id}} - {{this.burger_name}}</strong></span>
                         <button type="button" class="trashburger btn btn-danger" id="trashbutton" data-id="{{this.id}}"
-                            data-newDevoured="{{devoured}}"><span class="fa fa-trash"></span></button>
+                            data-newDevoured="{{devoured}}"><i class="fa fa-trash"></i></button>
                         <hr>
                         {{/if}}
                         {{/each}}
